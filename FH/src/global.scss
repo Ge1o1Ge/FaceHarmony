@@ -35,7 +35,7 @@ a {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 input[type='number'] {
@@ -123,7 +123,7 @@ input[type='number'] {
   }
 
   .nav__item + .nav__item {
-    margin-left: 3.2em;
+    margin-left: 2.6em;
   }
 
   .nav__lang-link:active,
@@ -162,16 +162,19 @@ input[type='number'] {
     letter-spacing: 0.5px;
     transition: 0.4s ease-in-out;
     cursor: pointer;
-    color: rgba($textLight, 0.7);
+    color: rgba($bgColor, 0.7);
+    padding: 8px;
   }
   .nav__link:active,
   .nav__link:focus,
   .nav__link:hover {
+    background-color: rgba($bgColor, 0.8);
+    border-radius: 5px;
     color: $blue;
   }
 
   .nav__link--active {
-    color: $textLight;
+    color: $bgColor;
     pointer-events: none;
     font-weight: 600;
   }
@@ -180,6 +183,21 @@ input[type='number'] {
 .header-bg {
   background-color: rgba($elements, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .nav__link {
+    color: rgba($textLight, 0.7);
+  }
+
+  .nav__link--active {
+    color: $textLight;
+  }
+
+  .nav__link:active,
+  .nav__link:focus,
+  .nav__link:hover {
+    background-color: transparent;
+    color: $blue;
+  }
 }
 
 .home__section,
@@ -224,8 +242,10 @@ input[type='number'] {
     font-family: OpenSans, Arial, sans-serif;
     font-weight: 600;
     font-size: 4rem;
-    color: $blue;
+    color: $textDark;
     text-transform: uppercase;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -285,10 +305,10 @@ input[type='number'] {
     box-shadow: 0 10px 30px $textLight;
   }
   .list__item:hover .card__image {
-    background-color: $middle;
+    background-color: $blue;
   }
   .list__item:hover .card__icon {
-    fill: $textLight;
+    fill: $textDark;
   }
 
   .list__item--services {
@@ -310,7 +330,7 @@ input[type='number'] {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  background-color: $darkEls;
+  background-color: rgba($darkEls, 0.7);
 
   .card__top {
     display: flex;
@@ -325,7 +345,8 @@ input[type='number'] {
     margin: 0;
     font-weight: 600;
     font-size: 1.5rem;
-    color: $textLight;
+    color: rgba($textDark, 0.8);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
   .card__title--info {
     margin-top: 0.6em;
@@ -334,7 +355,7 @@ input[type='number'] {
   }
   .card__text {
     margin: 0;
-    color: $textLight;
+    color: rgba($textDark, 0.8);
     text-align: justify;
     margin-bottom: 15px;
   }
@@ -345,7 +366,7 @@ input[type='number'] {
 
   .card__ul {
     list-style: inside;
-    color: $textLight;
+    color: rgba($textDark, 0.8);
   }
 
   .card__image {
@@ -355,7 +376,7 @@ input[type='number'] {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $textLight;
+    background-color: $textDark;
     border-radius: 50%;
     transition: 0.4s ease-in-out;
   }
@@ -540,7 +561,7 @@ input[type='number'] {
   color: $textLight;
   padding: 1em 0;
   font-family: OpenSans, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: inherit;
   background-color: $blue;
   border-radius: 14px;
@@ -618,7 +639,7 @@ input[type='number'] {
   color: $textLight;
   padding: 1em 0;
   font-family: OpenSans, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: inherit;
   background-color: $blue;
   border-radius: 14px;
@@ -745,7 +766,7 @@ input[type='number'] {
   .form__textarea {
     padding: 22px;
     border-radius: 14px;
-    background-color: $textLight;
+    background-color: rgba($textLight, 0.1);
     border: 1px solid $blue;
     color: rgba($textDark, 0.8);
     caret-color: $darkEls;
@@ -822,7 +843,15 @@ input[type='number'] {
 .footer {
   margin-top: 5em;
   background-color: $elements;
-  color: #fff;
+  color: rgba($textLight, 1);
+
+  .footer__logo-img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
 
   .footer__container {
     padding: 2em 4em 4em;
@@ -845,6 +874,9 @@ input[type='number'] {
     text-transform: uppercase;
     cursor: default;
     width: 30%;
+
+    display: flex;
+    align-items: center;
   }
 
   .footer__contact-list {
@@ -868,7 +900,7 @@ input[type='number'] {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: rgba($textDark, 1);
     transition: 0.4s ease-in-out;
     cursor: pointer;
   }
@@ -897,7 +929,7 @@ input[type='number'] {
     cursor: pointer;
   }
   .footer__privacy {
-    color: #fff;
+    color: rgba($textDark, 1);
     text-align: center;
     font-weight: 600;
     cursor: pointer;
@@ -1256,6 +1288,14 @@ input[type='number'] {
     .nav__list.show-menu {
       left: 0;
     }
+
+    .nav__link {
+      color: rgba($bgColor, 0.8);
+    }
+
+    .nav__link--active {
+      color: rgba($bgColor, 1);
+    }
   }
 }
 
@@ -1277,6 +1317,8 @@ input[type='number'] {
 
     .footer__name {
       text-align: center;
+      justify-content: center;
+      width: 100%;
     }
 
     .footer__container {
@@ -1355,12 +1397,10 @@ input[type='number'] {
 }
 
 @media (max-width: 480px) {
-
   .card .card__title {
     margin: 0;
     font-weight: 600;
     font-size: 1.3rem;
-    color: #fee2d7;
   }
 
   .home__image,

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="icon" href="images/logo@1x.png" type="image/png">
+    <link rel="icon" href="images/logo@1x.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css?family=Exo+2:200,400,600,400italic,600italic" rel="stylesheet" />
-    <title>ATMs</title>
+    <title>Face Harmony</title>
   </head>
   <body class="body">
     <div style="display: none">
@@ -193,6 +193,9 @@
             d="M11,1.5H1c-0.5517578,0-1,0.4482422-1,1v7c0,0.5517578,0.4482422,1,1,1h10c0.5517578,0,1-0.4482422,1-1v-7  C12,1.9482422,11.5517578,1.5,11,1.5z M4,8.5H2v-1h2V8.5z M8,8.5H5v-1h3V8.5z"
           />
         </symbol>
+        <symbol id="face-ico" viewBox="0 0 24 24">
+          <path d="M9,11.75A1.25,1.25 0 0,0 7.75,13A1.25,1.25 0 0,0 9,14.25A1.25,1.25 0 0,0 10.25,13A1.25,1.25 0 0,0 9,11.75M15,11.75A1.25,1.25 0 0,0 13.75,13A1.25,1.25 0 0,0 15,14.25A1.25,1.25 0 0,0 16.25,13A1.25,1.25 0 0,0 15,11.75M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,11.71 4,11.42 4.05,11.14C6.41,10.09 8.28,8.16 9.26,5.77C11.07,8.33 14.05,10 17.42,10C18.2,10 18.95,9.91 19.67,9.74C19.88,10.45 20,11.21 20,12C20,16.41 16.41,20 12,20Z" />
+        </symbol>
       </svg>
     </div>
     <header class="header">
@@ -202,7 +205,7 @@
             class="nav__logo-img"
             src="./images/logo@1x.png"
             srcset=""
-            alt="Логотип компании ATMs"
+            alt="Логотип компании Face Harmony"
             width="58"
             height="50"
           />
@@ -234,9 +237,9 @@
     <main>
       <section class="section home__section">
         <div class="container home">
-          <h1 class="visually-hidden">Банкоматы</h1>
+          <h1 class="visually-hidden">Face Harmony</h1>
           <div class="info__content">
-            <h2 class="home__title">Банкоматы</h2>
+            <h2 class="home__title">Face Harmony</h2>
           </div>
           <div class="home-image__container">
             <img
@@ -253,15 +256,15 @@
         <h3 class="section__title">Услуги</h3>
         <ul class="list">
           <li class="list__item list__item--services">
-            <a href="./beauty.html" id="atms" class="list__link" target="_self" rel="noopener"
+            <a href="./beauty.html" id="face_harmony" class="list__link" target="_self" rel="noopener"
               ><article class="card">
                 <div class="card__top">
                   <div class="card__image">
                     <svg class="card__icon" width="30" height="30" aria-hidden="true" focusable="false">
-                      <use xlink:href="#card-ico"></use>
+                      <use xlink:href="#face-ico"></use>
                     </svg>
                   </div>
-                  <h4 class="card__title">Банкоматы</h4>
+                  <h4 class="card__title">Массаж лица</h4>
                 </div>
                 <p class="card__text"></p></article
             ></a>
@@ -377,17 +380,17 @@
                   <use xlink:href="#icon-email"></use>
                 </svg>
               </div>
-              <span class="contact__text"> info@аtms-tech.ru</span>
+              <span class="contact__text"> info@faceharmony.tech</span>
             </a>
           </li>
           <li class="contact__item">
-            <a href="tel:+79953561251" class="contact__link">
+            <a href="tel:+79953918848" class="contact__link">
               <div class="contact__image card__image">
                 <svg class="contact__icon" width="20" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </div>
-              <span class="contact__text">+7 995 356 12 51</span>
+              <span class="contact__text">+7 995 391 88 48</span>
             </a>
           </li>
         </ul>
@@ -395,23 +398,9 @@
       </section>
       <div class="modal__content">
         <p class="modal__text">
-          введите, пожалуйста, необходимую вам сумму для выдачи и вашу почту, мы отправим вам самые подходящие
-          предложения, спасибо
+          введите, пожалуйста, вашу почту, мы отправим вам самые подходящие методики массажа лица, спасибо
         </p>
         <form class="modal__form modal__form-email" id="modal__form">
-          <div class="modal__form-field">
-            <input
-              type="number"
-              required
-              id="email"
-              class="modal__input"
-              min="10"
-              name="email"
-              autocomplete="off"
-              placeholder="Money amount"
-            />
-            <label class="modal__label">Money amount</label>
-          </div>
           <div class="modal__form-field">
             <input
               type="email"
@@ -431,12 +420,15 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <a class="footer__name" href="#">ATMs</a>
+        <a class="footer__name" href="#">
+          <img class="footer__logo-img" src="./images/logo@1x.png" srcset="" alt="Логотип компании Face Harmony" />
+          Face Harmony
+        </a>
         <ul class="footer__contact-list">
           <li class="footer__contact-item">
             <a
               class="footer__contact-link"
-              href="tel:+79953561251"
+              href="tel:+79953918848"
               target="_self"
               rel="noopener"
               aria-label="Контактный телефон"
@@ -444,7 +436,7 @@
               <svg class="footer__icon" width="22" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="#icon-phone"></use>
               </svg>
-              +7 995 356 12 51
+              +7 995 391 88 48
             </a>
           </li>
           <li class="footer__contact-item">
@@ -458,7 +450,7 @@
               <svg class="footer__icon" width="15" height="28" aria-hidden="true" focusable="false">
                 <use xlink:href="#icon-email"></use>
               </svg>
-              info@аtms-tech.ru
+              info@faceharmony.tech
             </a>
           </li>
         </ul>
