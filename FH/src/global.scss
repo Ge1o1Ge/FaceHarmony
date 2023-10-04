@@ -1427,6 +1427,35 @@ input[type='number'] {
   }
 }
 
+@media (max-width: 400px) {
+  .contact-popup,
+  .modal__content {
+    .contact__list {
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact__link {
+      margin: 15px 0;
+    }
+
+    .contact__image {
+      object-fit: contain;
+      height: 35px;
+      width: 35px;
+    }
+
+    .contact__icon {
+      transform: scale(60%);
+    }
+
+    .section__title--contact {
+      font-size: 1.8rem;
+    }
+  }
+}
+
 @media (max-width: 390px) {
   #exit__form {
     flex-direction: column;
