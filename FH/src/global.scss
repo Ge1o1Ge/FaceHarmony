@@ -150,7 +150,7 @@ input[type='number'] {
   .nav__lang-link {
     padding: 0.6em;
     font-size: 1rem;
-    color: $blue;
+    color: $textLight;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: 0.4s ease-in-out;
@@ -168,9 +168,9 @@ input[type='number'] {
   .nav__link:active,
   .nav__link:focus,
   .nav__link:hover {
-    background-color: rgba($bgColor, 0.8);
+    background-color: rgba($bgColor, 0.9);
     border-radius: 5px;
-    color: $blue;
+    color: $darkEls;
   }
 
   .nav__link--active {
@@ -245,7 +245,7 @@ input[type='number'] {
     color: $textDark;
     text-transform: uppercase;
 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
   }
 }
 
@@ -305,10 +305,10 @@ input[type='number'] {
     box-shadow: 0 10px 30px $textLight;
   }
   .list__item:hover .card__image {
-    background-color: $blue;
+    background-color: $darkEls;
   }
   .list__item:hover .card__icon {
-    fill: $textDark;
+    fill: $textLight;
   }
 
   .list__item--services {
@@ -345,7 +345,7 @@ input[type='number'] {
     margin: 0;
     font-weight: 600;
     font-size: 1.5rem;
-    color: rgba($textDark, 0.8);
+    color: rgba($textLight, 0.8);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
   .card__title--info {
@@ -355,7 +355,7 @@ input[type='number'] {
   }
   .card__text {
     margin: 0;
-    color: rgba($textDark, 0.8);
+    color: rgba($textLight, 0.8);
     text-align: justify;
     margin-bottom: 15px;
   }
@@ -376,14 +376,14 @@ input[type='number'] {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $textDark;
+    background-color: $bgColor;
     border-radius: 50%;
     transition: 0.4s ease-in-out;
   }
   .card__icon {
     width: 36px;
     height: 36px;
-    fill: $elements;
+    fill: $darkEls;
     transition: 0.4s ease-in-out;
   }
   .card__icon--contact,
@@ -1427,7 +1427,7 @@ input[type='number'] {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 435px) {
   .contact-popup,
   .modal__content {
     .contact__list {
@@ -1454,6 +1454,14 @@ input[type='number'] {
       font-size: 1.8rem;
     }
   }
+
+  .home,
+  .info {
+    .home__title,
+    .info__title {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 @media (max-width: 390px) {
@@ -1469,16 +1477,16 @@ input[type='number'] {
     }
   }
 
+  .modal-active {
+    top: calc(50% - 30vh);
+  }
+
   .home,
   .info {
     .home__title,
     .info__title {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
-  }
-
-  .modal-active {
-    top: calc(50% - 30vh);
   }
 }
 

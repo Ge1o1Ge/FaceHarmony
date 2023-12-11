@@ -78,14 +78,7 @@ const baseConfig = {
       template: path.resolve(__dirname, './src/support-en.html'),
       filename: 'support-en.html',
     }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/privacy-pol.html'),
-      filename: 'privacy-pol.html',
-    }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/privacy-pol-en.html'),
-      filename: 'privacy-pol-en.html',
-    }),
+
     new CopyPlugin({
       patterns: [
         {

@@ -10,13 +10,16 @@
 
 // $blue: #d83f87;
 
-$textLight: #666666;
-$bgColor: #FFFFFF;
-$elements: #F2F2F2;
-$middle: #FF9900;
-$darkEls: #FF6600;
+$textLight: #ffffff;
 $textDark: #000000;
-$blue: #FF6600;
+
+$bgColor: #f5f4f4;
+
+$elements: #80838e;
+$middle: rgb(77, 84, 118);
+$darkEls: #1f2c39;
+
+$blue: rgb(38, 48, 77);
 
 %title-font {
     font-family: OpenSans, Arial, sans-serif;
