@@ -361,10 +361,12 @@ input[type='number'] {
   }
 
   .card__subtitle {
+    margin-top: 15px;
     font-size: 1.3rem;
   }
 
   .card__ul {
+    margin-top: 5px;
     list-style: inside;
     color: rgba($textDark, 0.8);
   }
@@ -893,6 +895,8 @@ input[type='number'] {
   }
 
   .footer__info-list {
+    color: rgba($darkEls, 1);
+    font-size: 1rem;
     margin: 0 25px;
     width: 100%;
     align-items: start;
