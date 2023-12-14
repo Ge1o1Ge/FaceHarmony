@@ -115,7 +115,7 @@ input[type='number'] {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: rgba($textLight, 0.5);
   }
 
   .nav__lang-link {
@@ -135,7 +135,7 @@ input[type='number'] {
   .nav__lang-item:active,
   .nav__lang-item:focus,
   .nav__lang-item:hover {
-    background-color: rgba($textLight, 0.7);
+    background-color: rgba($textLight, 0.9);
   }
 
   .nav__lang-item--active {
@@ -150,7 +150,7 @@ input[type='number'] {
   .nav__lang-link {
     padding: 0.6em;
     font-size: 1rem;
-    color: $textLight;
+    color: $textDark;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: 0.4s ease-in-out;
@@ -162,7 +162,7 @@ input[type='number'] {
     letter-spacing: 0.5px;
     transition: 0.4s ease-in-out;
     cursor: pointer;
-    color: rgba($bgColor, 0.7);
+    color: rgba($blue, 0.9);
     padding: 8px;
   }
   .nav__link:active,
@@ -170,11 +170,13 @@ input[type='number'] {
   .nav__link:hover {
     background-color: rgba($bgColor, 0.9);
     border-radius: 5px;
-    color: $darkEls;
+    color: $blue;
   }
 
   .nav__link--active {
-    color: $bgColor;
+    color: $blue;
+    background-color: rgba($bgColor, 0.9);
+    border-radius: 5px;
     pointer-events: none;
     font-weight: 600;
   }
@@ -189,13 +191,12 @@ input[type='number'] {
   }
 
   .nav__link--active {
-    color: $textLight;
+    color: $blue;
   }
 
   .nav__link:active,
   .nav__link:focus,
   .nav__link:hover {
-    background-color: transparent;
     color: $blue;
   }
 }
@@ -224,6 +225,29 @@ input[type='number'] {
 
   100% {
     background-position: bottom 150px right -170px;
+  }
+}
+
+.info__section {
+  background-position: bottom 50px right -170px;
+  animation: bgFade2 3s ease-out;
+}
+
+@keyframes bgFade2 {
+  0% {
+    background-position: bottom 1000px right -160px;
+  }
+
+  33% {
+    background-position: bottom 0px right -160px;
+  }
+
+  66% {
+    background-position: bottom 75px right -165px;
+  }
+
+  100% {
+    background-position: bottom 50px right -170px;
   }
 }
 
@@ -311,6 +335,11 @@ input[type='number'] {
     fill: $textLight;
   }
 
+  .list__item:hover .card__title {
+    color: $blue;
+    transition: all 0.5s ease;
+  }
+
   .list__item--services {
     flex: 1 300px;
   }
@@ -347,6 +376,7 @@ input[type='number'] {
     font-size: 1.5rem;
     color: rgba($textLight, 0.8);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
   }
   .card__title--info {
     margin-top: 0.6em;
@@ -367,6 +397,12 @@ input[type='number'] {
   .card__ul {
     list-style: inside;
     color: rgba($textDark, 0.8);
+    margin-bottom: 15px;
+  }
+
+  .card__ul li {
+    list-style: inside;
+    margin-bottom: 5px;
   }
 
   .card__image {
@@ -896,6 +932,7 @@ input[type='number'] {
     margin: 0 25px;
     width: 100%;
     align-items: start;
+    font-size: 1rem;
   }
 
   .footer__contact-item:last-child {
@@ -906,7 +943,7 @@ input[type='number'] {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba($textDark, 1);
+    color: rgba($blue, 1);
     transition: 0.4s ease-in-out;
     cursor: pointer;
   }
@@ -918,7 +955,7 @@ input[type='number'] {
   .footer__contact-link:active,
   .footer__contact-link:focus,
   .footer__contact-link:hover {
-    color: $blue;
+    color: $bgColor;
   }
 
   .footer__contact-link:active .footer__icon,
@@ -1274,7 +1311,7 @@ input[type='number'] {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      background-color: rgba($textDark, 0.5);
+      background-color: rgba($textDark, 0.4);
       backdrop-filter: blur(32px);
       transition: 0.4s ease-in-out;
       z-index: 3;
@@ -1300,7 +1337,7 @@ input[type='number'] {
     }
 
     .nav__link--active {
-      color: rgba($bgColor, 1);
+      color: rgba($blue, 1);
     }
   }
 }
